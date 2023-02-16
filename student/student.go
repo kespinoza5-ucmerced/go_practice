@@ -7,16 +7,16 @@ type course struct {
 }
 
 type Student struct {
-	name, id, major string
-	age             int64
+	Name, Id, Major string
+	Age             int64
 	courses         []course
 }
 
 // NewStudent initializes Student with given name and id
 func NewStudent(_name, _id string) *Student {
 	return &Student{
-		name: _name,
-		id:   _id,
+		Name: _name,
+		Id:   _id,
 	}
 }
 
