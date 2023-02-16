@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 
-	// "github.com/kespinoza5-ucmerced/go_practice/database"
 	"github.com/kespinoza5-ucmerced/go_practice/database"
 	"github.com/kespinoza5-ucmerced/go_practice/student"
 )
