@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/kespinoza5-ucmerced/go_practice/database"
+	"github.com/kespinoza5-ucmerced/go_practice/program"
 	"github.com/kespinoza5-ucmerced/go_practice/student"
 )
 
@@ -60,11 +61,19 @@ func test_database(name, id string) {
 	fmt.Printf("Num students in db: %d\n", db.Num_student())
 }
 
+func test_program() {
+	db := database.Database{}
+	p := program.NewProgram("hi", db)
+
+	p.Run()
+}
+
 func main() {
-	name := "Kevin"
-	id := "100741789"
+	// name := "Kevin"
+	// id := "100741789"
 
 	// test_student(name, id)
-	test_database(name, id)
+	// test_database(name, id)
 
+	test_program()
 }
