@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/kespinoza5-ucmerced/go_practice/database"
-	"github.com/kespinoza5-ucmerced/go_practice/student"
+	"github.com/kespinoza5-ucmerced/go_practice/hw/database"
+	"github.com/kespinoza5-ucmerced/go_practice/hw/student"
 )
 
 type Program struct {

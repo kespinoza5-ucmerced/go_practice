@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/kespinoza5-ucmerced/go_practice/math"
-	"github.com/kespinoza5-ucmerced/go_practice/math/simplemath"
+	"github.com/kespinoza5-ucmerced/go_practice/go_tutorial/math"
+	"github.com/kespinoza5-ucmerced/go_practice/go_tutorial/math/simplemath"
 )
 
 // add_one takes a value by reference and adds on to the value

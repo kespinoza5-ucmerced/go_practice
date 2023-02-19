@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 
-	"github.com/kespinoza5-ucmerced/go_practice/database"
-	"github.com/kespinoza5-ucmerced/go_practice/program"
-	"github.com/kespinoza5-ucmerced/go_practice/student"
+	"github.com/kespinoza5-ucmerced/go_practice/hw/database"
+	"github.com/kespinoza5-ucmerced/go_practice/hw/program"
+	"github.com/kespinoza5-ucmerced/go_practice/hw/student"
 )
 
 func test_student(name, id string) {

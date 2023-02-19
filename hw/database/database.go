@@ -1,6 +1,6 @@
 package database
 
-import "github.com/kespinoza5-ucmerced/go_practice/student"
+import "github.com/kespinoza5-ucmerced/go_practice/hw/student"
 
 type Database struct {
 	Students []student.Student
