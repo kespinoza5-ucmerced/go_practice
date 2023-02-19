@@ -1,0 +1,7 @@
+go 1.20
+
+use (
+	./cell_simulation
+	./go_tutorial
+	./hw
+)
