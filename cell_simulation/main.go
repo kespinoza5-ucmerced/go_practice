@@ -29,12 +29,12 @@ func (e CellSplitEvent) IsSecondary() bool {
 
 type CellSplitEventHandler struct {
 	cellCount int
-	engine    *sim.SerialEngine
+	engine    sim.EventScheduler
 }
 
 func (h *CellSplitEventHandler) Handle(e sim.Event) error {
 	// check type of event
-	CellSplitEvent, ok := e.(CellSplitEvent)
+	cellSplitEvent, ok := e.(CellSplitEvent)
 	if !ok {
 		panic("wrong event type")
 	}
@@ -42,19 +42,19 @@ func (h *CellSplitEventHandler) Handle(e sim.Event) error {
 	// perform split
 	h.cellCount++
 	fmt.Printf("Cell split at time %f, cell count: %d\n",
-		CellSplitEvent.time, h.cellCount)
+		cellSplitEvent.time, h.cellCount)
 
 	// randomly generate number between 1-2
 	timeUntilNextSplit := sim.VTimeInSec(rand.Float64() + 1)
 
 	// create an event that adds current time and timeUntilNextSplit
 	event := CellSplitEvent{
-		time:    CellSplitEvent.time + timeUntilNextSplit,
+		time:    cellSplitEvent.time + timeUntilNextSplit,
 		handler: h,
 	}
 
 	// stop simulation at 200s
-	if CellSplitEvent.time < 200 {
+	if cellSplitEvent.time < 200 {
 		h.engine.Schedule(event)
 	}
 
