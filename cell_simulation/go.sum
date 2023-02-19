@@ -1,0 +1,4 @@
+github.com/rs/xid v1.4.0 h1:qd7wPTDkN6KQx2VmMBLrpHkiyQwgFXRnkOLacUiaSNY=
+github.com/rs/xid v1.4.0/go.mod h1:trrq9SKmegXys3aeAKXMUTdJsYXVwGY3RLcfgqegfbg=
+gitlab.com/akita/akita/v3 v3.0.0-alpha.21 h1:02y+YonTbk8hP+a5tbHoDU4mXeTr4ABamG/0Xr9yboA=
+gitlab.com/akita/akita/v3 v3.0.0-alpha.21/go.mod h1:1nGDue8VwvjC0XOLJ3Sf0LFwfvxIzEPWglv0hkNc4sA=
