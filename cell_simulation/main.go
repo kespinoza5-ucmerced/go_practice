@@ -29,7 +29,7 @@ func (e CellSplitEvent) IsSecondary() bool {
 
 type CellSplitEventHandler struct {
 	cellCount int
-	engine    *sim.Engine
+	engine    *sim.SerialEngine
 }
 
 func (h *CellSplitEventHandler) Handle(e sim.Event) error {
@@ -62,7 +62,7 @@ func (h *CellSplitEventHandler) Handle(e sim.Event) error {
 }
 
 func main() {
-	engine := sim.NewEngine()
+	engine := sim.NewSerialEngine()
 	handler := &CellSplitEventHandler{
 		engine: engine,
 	}
