@@ -7,7 +7,8 @@ import (
 var list []int
 var sum int
 
-// Solver returns a two element array with the values that sum to target number (otherwise returns [2]int{0, 0})
+// Solver returns a two element array with the values that sum to target number 
+// (otherwise returns [2]int{0, 0})
 // O(n) to iterate through list once, pushing elements each iteration
 func solver(list []int, sum int) [2]int {
 	dict := make(map[int]int)
