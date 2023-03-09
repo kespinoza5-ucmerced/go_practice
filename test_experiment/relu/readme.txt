@@ -1,0 +1,1 @@
+run with: .\relu.exe -timing --length=65536 --report-all
